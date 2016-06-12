@@ -16,3 +16,5 @@ Typically, (REST) resources are used with query parameters such as /resource?par
 	"inputType":{"properties":{"includTimestamp", type:"boolean"}}
 	"href": "temp?inc_ts={includeTimestamp}"
 }
+
+Alternatively, we could adopt json hyperschema such links are part of the type itself.
