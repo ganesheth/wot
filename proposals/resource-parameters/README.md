@@ -9,3 +9,12 @@ Typically, (REST) resources are used with query parameters such as /resource?par
 
 #First Ideas
 1)  define query parameters in the same way as the inputValue and outputValues
+2) Use URI template and pre-processing similar to JSON Hyperschema proposal. Example:
+
+{
+	"name": "temperature",
+	"inputType":{"properties":{"includTimestamp", type:"boolean"}}
+	"href": "temp?inc_ts={includeTimestamp}"
+}
+
+Alternatively, we could adopt json hyperschema such links are part of the type itself.
